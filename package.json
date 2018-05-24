@@ -1,0 +1,27 @@
+{
+  "name": "CoolService",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lppking/CoolService.git"
+  },
+  "author": "lipengpeng",
+  "babel": {
+    "presets": "env"
+  },
+  "scripts": {
+    "test": "jest --coverage --no-cache",
+    "build": "npm run bundle && npm run minify",
+    "bundle": "rollup -i src/index.js -o dist/cs.js -m -f umd -n cs",
+    "minify": "uglifyjs dist/cs.js -o dist/cs.min.js -mc pure_funcs=Object.defineProperty --source-map includeSources,url=cs.js.map"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.0.4",
+    "prettier": "^1.9.2",
+    "rollup": "^0.53.0",
+    "typescript": "^2.6.2",
+    "uglify-es": "^3.3.9"
+  }
+}
