@@ -17,11 +17,22 @@
     "minify": "uglifyjs dist/cs.js -o dist/cs.min.js -mc pure_funcs=Object.defineProperty --source-map includeSources,url=cs.js.map"
   },
   "devDependencies": {
+    "babel-eslint": "^8.0.1",
     "babel-preset-env": "^1.6.1",
     "jest": "^22.0.4",
     "prettier": "^1.9.2",
     "rollup": "^0.53.0",
     "typescript": "^2.6.2",
-    "uglify-es": "^3.3.9"
+    "uglify-es": "^3.3.9",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^16.0.0",
+    "eslint-import-resolver-node": "^0.3.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-compat": "^2.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^6.0.0",
+    "eslint-plugin-markdown": "^1.0.0-beta.6",
+    "eslint-plugin-prettier": "^2.6.0"
   }
 }

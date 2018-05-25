@@ -1,5 +1,5 @@
-import chunk from './chunk'
+import chunk from './chunk';
 
 export {
   chunk
-}
+};
