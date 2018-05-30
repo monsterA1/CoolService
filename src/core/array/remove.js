@@ -1,7 +1,7 @@
 /**
  * @description: 数组扩展方法remove
  * @param {Array} arr
- * @example: .chunk([1,2,3,4], 2) => return [[1,2],[3,4]]
+ * @example
  */
 export default function (arr, value, type='index') {
   if(!Array.isArray(arr)){
